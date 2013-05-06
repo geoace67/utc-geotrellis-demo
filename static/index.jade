@@ -61,11 +61,22 @@ html(lang='en')
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            a.brand(href='#') Civitas
+            a.brand(href='#') Thrive 2055
             .nav-collapse.collapse
               ul.nav.pull-right
                 li
-                  a(href='#aboutModal', data-toggle='modal') About
+                  a(href='https://twitter.com/Thrive2055')
+                    | &#32; &#32;
+                    i.icon-twitter
+                    // https://www.facebook.com/Thrive2055
+                li
+                  a(href='https://www.facebook.com/Thrive2055')
+                    | &#32; &#32;
+                    i.icon-facebook-sign
+                li
+                  a(href='#aboutModal', data-toggle='modal')
+                    | &#32; &#32;
+                    i.icon-info-sign
             //
               /.nav-collapse 
       .container-fluid
@@ -90,7 +101,7 @@ html(lang='en')
                   li.dropdown
                     a#drop5.btn.dropdown-toggle(role='button', data-toggle='dropdown', href='#')
                       | Color Ramps
-                      i.icon-chevron-down
+                      i.icon-angle-down
                     ul#color-ramp-menu.dropdown-menu(role='menu', aria-labelledby='drop5')
                 //
                    /tabs 
@@ -104,9 +115,13 @@ html(lang='en')
           #sidebar.span4
             ul.nav.nav-tabs
               li.active
-                a(href='#parameters', data-toggle='tab') Parameters
+                a(href='#parameters', data-toggle='tab') Models
+                  | &#32; &#32;
+                  i.icon-cogs
               li
                 a(href='#summary', data-toggle='tab') Summary
+                  | &#32; &#32;
+                  i.icon-bar-chart
             #tabBody.tab-content
               #parameters.tab-pane.active
                 //
